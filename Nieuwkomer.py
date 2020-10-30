@@ -13,7 +13,7 @@ def restart():
         main()
 
 def einde1():
-    print("doodlopend einde")
+    print("Helaas is het je niet gelukt om te vluchten. Je bent niet verder dan je eigenland gekomen.")
 def einde2():
     print("normaal einde")
 def einde3():
@@ -21,7 +21,6 @@ def einde3():
 def einde4():
     print("goed einde")
     
-
 #hier moet een kort intro stukje komen.
 def intro():
     print("In dit verhaal ben je een man die in Afghanistan woont. Je woont hier met je gezin van 5. Je bent best gelukkig en hebt een goede baan. Op een dood normale dag word je opgebeld door een goede vriend die 2 steden verderop woont. Hij vertelt je dat het echt niet meer veilig is om hier te blijven en dat je moet vluchten. Hij kan regelen dat je met een busje het land uit kan, maar dat kost je wel geld. €2000,- wel geteld. Dit geld heb je op je spaar rekening staan, maar wil dat liever achterlaten voor je familie.")
@@ -39,7 +38,7 @@ def intro():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         intro()
 
-time.sleep(1)
+
 #stukje 1
 def stukje1():
     print("1. intro txt?")
@@ -55,13 +54,14 @@ def stukje1():
     else:
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje1()
-
+        
+time.sleep(1)
 #stukje 2
 def stukje2():
-    print("2. intro txt?")
-    print("A: txt18")
-    print("B: txt21")
-    print("C: txt1")
+    print("2. Oke. Je gaat niet mee met het busje, maar wat ga je wel doen?")
+    print("A: Je vraagt aan een vriend of hij je naar de grens bij Iran kan brengen. Daarna ga je verder lopen.")
+    print("B: Je besluit alles te gaan lopen en kijkt wel hoe ver je komt. Je wilt in ieder geval weg uit dit land.")
+    print("C: Je besluit alsnog om met het busje mee te gaan")
     stukje2 = input("A, B of C? ").upper()
     if stukje2 == "A":
         print("----------------------------------------------------------------------------------")
@@ -76,6 +76,7 @@ def stukje2():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje2()
 
+time.sleep(1)
 #stukje 3
 def stukje3():
     print("3. intro txt?")
@@ -92,6 +93,7 @@ def stukje3():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje3()
 
+time.sleep(1)
 #stukje 4
 def stukje4():
     print("4. intro txt?")
@@ -108,11 +110,13 @@ def stukje4():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje4()
 
+time.sleep(1)
 #stukje 5 = einde1
 def stukje5():
     einde1()
     restart()
 
+time.sleep(1)
 #stukje 6
 def stukje6():
     print("6. intro txt?")
@@ -129,15 +133,18 @@ def stukje6():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje6()
 
+time.sleep(1)
 #stukje 7 = einde2
 def stukje7():
     einde2()
     restart()
 
+time.sleep(1)
 #stukje 8 gaat naar stukje 10
 def stukje8():
     stukje10()
 
+time.sleep(1)
 #stukje 9
 def stukje9():
     print("9. intro txt?")
@@ -154,6 +161,7 @@ def stukje9():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje9()
 
+time.sleep(1)
 #stukje 10
 def stukje10():
     print("10. intro txt?")
@@ -169,12 +177,14 @@ def stukje10():
     else:
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje10()
-        
+
+time.sleep(1)    
 #stukje 11 = einde1
 def stukje11():
     einde1()
     restart()
-    
+
+time.sleep(1)  
 #stukje 12
 def stukje12():
     print("12. intro txt?")
@@ -191,6 +201,7 @@ def stukje12():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje12()
 
+time.sleep(1)
 #stukje 13.1
 def stukje131():
     print("13. Nadat je het geld hebt geregeld bel je je vriend die de bus ook zou regelen. Hij heeft ook en nieuw paspoort voor je geregeld, zodat je iets hebt als je het land verlaat. Morgen ochtend word je om 9:00 uur verwacht bij de moskee aan de rand van het dorp. Je twijfelt of je een tas met wat noodzakelijke spullen te pakken voor je lange reis. Wat doe je?")
@@ -207,6 +218,7 @@ def stukje131():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje131()
 
+time.sleep(1)
 #stukje 13.2
 def stukje132():
     print("13. Je hebt besloten om toch wel met het busje te gaan. Morgen ochtend word je om 9:00 uur verwacht bij de moskee aan de rand van het dorp. Je twijfelt of je een tas met wat noodzakelijke spullen te pakken voor je lange reis. Wat doe je?")
@@ -223,6 +235,7 @@ def stukje132():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje132()
 
+time.sleep(1)
 #stukje 14
 def stukje14():
     print("14. Het is je gelukt om het geld zo snel mogelijk te verzamelen en je belt de vriend op die het busje voor je kon regelen. Die vriend zou ook een nieuw paspoort regelen, zodat je in ieder geval iets hebt. Je gaat bij die vriend langs om je nieuwe paspoort op te halen. Eenmaal terug thuis twijfel je of je wel met het busje mee gaat. Wat ga je doen?")
@@ -239,21 +252,25 @@ def stukje14():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje14()
 
+time.sleep(1)
 #stukje 15 = einde1
 def stukje15():
     einde1()
     restart()
 
+time.sleep(1)
 #stukje 16 = einde3
 def stukje16():
     einde3()
     restart()
 
+time.sleep(1)
 #stukje 17 = einde1
 def stukje17():
     einde1()
     restart()
 
+time.sleep(1)
 #stukje 18
 def stukje18():
     print("18. intro txt?")
@@ -270,6 +287,7 @@ def stukje18():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje18()
 
+time.sleep(1)
 #stukje 19
 def stukje19():
     print("19. intro txt?")
@@ -286,16 +304,17 @@ def stukje19():
         print("Sorry dat begrijp ik niet. Ik begrijp alleen maar a of b als antwoord.")
         stukje19()
 
+time.sleep(1)
 #stukje 20 = einde4
 def stukje20():
     einde4()
     restart()
 
+time.sleep(1)
 #stukje 21 = einde1
 def stukje21():
     einde1()
     restart()
-
 
 def main():
     print("Hey! Welkom bij dit avontuur gebasseerd op het verhaal van een vluchteling")
